@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Laravel (most useable)
+Route::get('/', [PagesController::class, 'index'])->name('pages');
+Route::get('/about', [PagesController::class, 'about'])->name('about');
+// Laravel 8 (less usable)
+// Route::get('/products', 'App\Http\Controllers\ProductsController@index');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Before laravel 8 
+// Route::get('/products', 'ProductsController@index');
