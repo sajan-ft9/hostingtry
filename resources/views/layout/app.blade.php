@@ -8,12 +8,12 @@
     </title>
     <link
         rel="stylesheet"
-        href="{{ secure_asset('css/style.css')}}"
+        href="{{ URL('css/style.css')}}"
     />
-    <link
+    {{-- <link
     rel="stylesheet"
-    href="{{ asset('css/style.css')}}"
-/>
+    href="{{ URL('css/style.css')}}"
+/> --}}
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap"
         rel="stylesheet"
