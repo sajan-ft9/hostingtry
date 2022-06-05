@@ -8,7 +8,7 @@
     </title>
     <link
         rel="stylesheet"
-        href="{{ URL('css/style.css')}}"
+        href="/css/style.css"
     />
     {{-- <link
     rel="stylesheet"
